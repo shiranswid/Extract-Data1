@@ -2,164 +2,92 @@
 <html lang="he" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>הויזואליזציה שלי</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>הוויזואליזציה שלי</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
-      background: #f7f9fc;
+      background: linear-gradient(to right, #eef2f3, #8e9eab);
       margin: 0;
-      padding: 0;
-      direction: rtl;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(to right, #4facfe, #00f2fe);
-      padding: 30px 20px;
-      text-align: center;
-      color: white;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 3em;
-    }
-    section {
-      max-width: 1200px;
-      margin: 40px auto;
       padding: 20px;
-      background: white;
-      border-radius: 15px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      direction: rtl;
+      text-align: right;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
     }
     h2 {
-      color: #4facfe;
-      margin-top: 30px;
+      color: #34495e;
+      margin-top: 40px;
     }
     p {
-      font-size: 1.2em;
-      line-height: 1.8;
+      color: #555;
+      line-height: 1.6;
     }
     .buttons {
-      margin-top: 30px;
+      margin: 30px 0;
       text-align: center;
     }
-    .buttons a {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 25px;
-      background: #00c6ff;
+    .buttons button {
+      background-color: #3498db;
+      border: none;
       color: white;
-      text-decoration: none;
-      border-radius: 30px;
-      transition: background 0.3s;
-      font-size: 1.1em;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
     }
-    .buttons a:hover {
-      background: #0072ff;
+    .buttons button:hover {
+      background-color: #2980b9;
     }
-    .tableau-container {
-      margin-top: 40px;
+    .tableauPlaceholder {
+      width: 100%;
+      height: 700px;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>הויזואליזציה שלי</h1>
-</header>
+  <h1>הוויזואליזציה שלי</h1>
 
-<section>
   <p>
-    פרויקט זה נועד להציג תובנות מעמיקות מתוך מערך נתונים מורכב באמצעות כלי הוויזואליזציה העוצמתי של Tableau.
-    המטרה המרכזית היא להפוך נתונים גולמיים לסיפור ויזואלי ברור ומשכנע, שיאפשר קבלת החלטות מושכלת יותר.
+    פרויקט זה נועד להציג תובנות מעמיקות מתוך מערך נתונים מורכב באמצעות כלי הוויזואליזציה העוצמתי של Tableau. המטרה המרכזית היא להפוך נתונים גולמיים לסיפור ויזואלי ברור ומשכנע, שיאפשר קבלת החלטות מושכלת יותר.
   </p>
 
   <h2>סקירה כללית של הפרויקט</h2>
   <p>
-    בפרויקט זה, התמקדתי בניתוח נתוני מכירות של חברת "אלפא טק" במהלך השנה האחרונה. מערך הנתונים כולל מידע מפורט על עסקאות מכירה, פילוח לפי אזורים גיאוגרפיים, קטגוריות מוצרים, נציגי מכירות ופרקי זמן שונים.
-    באמצעות Tableau, יצרתי מספר דאשבורדים אינטראקטיביים המאפשרים למשתמשים לחקור את הנתונים בצורה דינמית ולגלות מגמות ודפוסים חשובים.
+    בפרויקט זה, התמקדתי בניתוח נתוני מכירות של חברת "אלפא טק" במהלך השנה האחרונה. מערך הנתונים כולל מידע מפורט על עסקאות מכירה, פילוח לפי אזורים גיאוגרפיים, קטגוריות מוצרים, נציגי מכירות ופרקי זמן שונים. באמצעות Tableau, יצרתי מספר דאשבורדים אינטראקטיביים המאפשרים למשתמשים לחקור את הנתונים בצורה דינמית ולגלות מגמות ודפוסים חשובים.
   </p>
 
   <h2>הדאשבורדים המרכזיים</h2>
-
-  <h3>דאשבורד סקירת מכירות שנתית</h3>
-  <p>
-    מציג את סך המכירות, הרווח הגולמי ומספר העסקאות במהלך השנה, עם אפשרות לפילוח לפי חודשים ורבעונים.
-  </p>
-
-  <h3>דאשבורד פילוח גיאוגרפי</h3>
-  <p>
-    מציג את ביצועי המכירות לפי אזורים שונים בארץ, מאפשר להשוות בין אזורים ולזהות אזורים עם פוטנציאל צמיחה גבוה או חולשה.
-  </p>
-
-  <h3>דאשבורד ניתוח מוצרים</h3>
-  <p>
-    מציג את נתוני המכירות של קטגוריות המוצרים השונות, מאפשר לזהות את המוצרים המובילים ואת אלה שדורשים שיפור במכירות.
-  </p>
-
-  <h3>דאשבורד ביצועי נציגי מכירות</h3>
-  <p>
-    מאפשר להשוות בין ביצועי נציגי המכירות השונים, לזהות את המצטיינים ולתת כלים למנהלים לקבל החלטות בנוגע לצוות המכירות.
-  </p>
+  <ul>
+    <li><strong>דאשבורד סקירת מכירות שנתית:</strong> מציג את סך המכירות, הרווח הגולמי ומספר העסקאות במהלך השנה, עם אפשרות לפילוח לפי חודשים ורבעונים.</li>
+    <li><strong>דאשבורד פילוח גיאוגרפי:</strong> מציג את ביצועי המכירות לפי אזורים שונים בארץ, מאפשר להשוות בין אזורים ולזהות אזורים עם פוטנציאל צמיחה גבוה או חולשה.</li>
+    <li><strong>דאשבורד ניתוח מוצרים:</strong> מציג את נתוני המכירות של קטגוריות המוצרים השונות, מאפשר לזהות את המוצרים המובילים ואת אלה שדורשים שיפור במכירות.</li>
+    <li><strong>דאשבורד ביצועי נציגי מכירות:</strong> מאפשר להשוות בין ביצועי נציגי המכירות השונים, לזהות את המצטיינים ולתת כלים למנהלים לקבל החלטות בנוגע לצוות המכירות.</li>
+  </ul>
 
   <div class="buttons">
-    <a href="#top">חזרה לראש העמוד</a>
-    <a href="https://public.tableau.com/views/ExtractData1/Dashboard1" target="_blank">צפה בגרסה מלאה</a>
+    <button onclick="window.scrollTo(0, document.body.scrollHeight);">גש לוויזואליזציה</button>
+    <button onclick="alert('תודה על הצפייה בפרויקט!');">צור קשר</button>
   </div>
 
-  <div class="tableau-container">
-    <!-- כאן נמצא קוד ההטמעה של הדאשבורד -->
-    <div class='tableauPlaceholder' id='viz1745154529977' style='position: relative'>
-      <noscript>
-        <a href='#'>
-          <img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExtractData1&#47;Dashboard1&#47;1_rss.png' style='border: none' />
-        </a>
-      </noscript>
-      <object class='tableauViz' style='display:none;'>
-        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-        <param name='embed_code_version' value='3' /> 
-        <param name='site_root' value='' />
-        <param name='name' value='ExtractData1&#47;Dashboard1' />
-        <param name='tabs' value='no' />
-        <param name='toolbar' value='yes' />
-        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExtractData1&#47;Dashboard1&#47;1.png' />
-        <param name='animate_transition' value='yes' />
-        <param name='display_static_image' value='yes' />
-        <param name='display_spinner' value='yes' />
-        <param name='display_overlay' value='yes' />
-        <param name='display_count' value='yes' />
-        <param name='language' value='en-US' />
-        <param name='filter' value='publish=yes' />
-      </object>
-    </div>                
-
-    <script type='text/javascript'>
-      var divElement = document.getElementById('viz1745154529977');
-      var vizElement = divElement.getElementsByTagName('object')[0];
-      if (divElement.offsetWidth > 800) {
-        vizElement.style.minWidth='300px';
-        vizElement.style.maxWidth='1500px';
-        vizElement.style.width='100%';
-        vizElement.style.minHeight='587px';
-        vizElement.style.maxHeight='887px';
-        vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-      } else if (divElement.offsetWidth > 500) {
-        vizElement.style.minWidth='300px';
-        vizElement.style.maxWidth='1500px';
-        vizElement.style.width='100%';
-        vizElement.style.minHeight='587px';
-        vizElement.style.maxHeight='887px';
-        vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-      } else {
-        vizElement.style.width='100%';
-        vizElement.style.height='1227px';
-      }
-      var scriptElement = document.createElement('script');
-      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-      vizElement.parentNode.insertBefore(scriptElement, vizElement);
-    </script>
+  <!-- כאן הטמעה אמיתית של הדאשבורד -->
+  <div class="tableauPlaceholder" id="tableauViz">
+    <object class="tableauViz" width="100%" height="700"
+      data="https://public.tableau.com/views/ExtractData1/Dashboard1">
+      <param name="embed_code_version" value="3" />
+      <param name="site_root" value="" />
+      <param name="name" value="ExtractData1/Dashboard1" />
+      <param name="tabs" value="no" />
+      <param name="toolbar" value="yes" />
+    </object>
   </div>
 
-</section>
+  <script type="text/javascript" src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>
 
 </body>
 </html>
