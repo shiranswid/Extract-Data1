@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: 'Arial', sans-serif;
-      background: linear-gradient(to right, #eef2f3, #8e9eab);
+      background: linear-gradient(to bottom, #ffffff, #f0f4f7);
       margin: 0;
       padding: 20px;
       direction: rtl;
@@ -15,37 +15,50 @@
     }
     h1 {
       text-align: center;
-      color: #2c3e50;
+      color: #1a237e;
+      margin-bottom: 20px;
     }
     h2 {
-      color: #34495e;
+      color: #3949ab;
       margin-top: 40px;
+      border-bottom: 2px solid #c5cae9;
+      padding-bottom: 5px;
     }
-    p {
-      color: #555;
-      line-height: 1.6;
+    p, li {
+      color: #333;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+    ul {
+      list-style-type: disc;
+      margin-right: 20px;
     }
     .buttons {
-      margin: 30px 0;
+      margin: 40px 0;
       text-align: center;
     }
     .buttons button {
-      background-color: #3498db;
+      background-color: #4caf50;
       border: none;
       color: white;
-      padding: 10px 20px;
+      padding: 12px 24px;
       margin: 5px;
-      border-radius: 5px;
+      border-radius: 30px;
       cursor: pointer;
-      font-size: 16px;
+      font-size: 18px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
     }
     .buttons button:hover {
-      background-color: #2980b9;
+      background-color: #45a049;
     }
     .tableauPlaceholder {
       width: 100%;
       height: 700px;
       margin-top: 30px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
     }
   </style>
 </head>
@@ -71,11 +84,10 @@
   </ul>
 
   <div class="buttons">
-    <button onclick="window.scrollTo(0, document.body.scrollHeight);">גש לוויזואליזציה</button>
-    <button onclick="alert('תודה על הצפייה בפרויקט!');">צור קשר</button>
+    <button onclick="document.getElementById('tableauViz').scrollIntoView({ behavior: 'smooth' });">גש לוויזואליזציה</button>
   </div>
 
-  <!-- כאן הטמעה אמיתית של הדאשבורד -->
+  <!-- הטמעה של הדאשבורד -->
   <div class="tableauPlaceholder" id="tableauViz">
     <object class="tableauViz" width="100%" height="700"
       data="https://public.tableau.com/views/ExtractData1/Dashboard1">
