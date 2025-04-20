@@ -3,158 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>הוויזואליזציה שלי</title>
+    <title>הויזואליזציה שלי</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f4f8;
+            color: #333;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            direction: rtl;
         }
-
         header {
-            background-color: #007bff;
+            background-color: #4a90e2;
             color: white;
-            padding: 20px 0;
+            padding: 2rem;
             text-align: center;
-            width: 100%;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
+        main {
+            padding: 2rem;
         }
-
-        .container {
-            width: 80%;
-            background-color: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
-
         h2 {
-            color: #007bff;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 10px;
-            margin-top: 25px;
+            color: #4a90e2;
         }
-
         p {
             line-height: 1.6;
-            margin-bottom: 15px;
         }
-
-        .button-container {
-            display: flex;
-            gap: 15px;
-            margin-top: 20px;
+        .buttons {
+            margin-top: 1rem;
         }
-
-        .button {
-            background-color: #28a745;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
+        .buttons a {
             text-decoration: none;
-            font-size: 1em;
-            transition: background-color 0.3s ease;
+            background-color: #4a90e2;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 25px;
+            margin-right: 10px;
+            transition: background-color 0.3s;
         }
-
-        .button:hover {
-            background-color: #1e7e34;
+        .buttons a:hover {
+            background-color: #357ABD;
         }
-
-        .tableau-viz {
+        .tableau-container {
+            margin-top: 2rem;
+            text-align: center;
+        }
+        iframe {
             width: 100%;
-            height: 500px; /* התאם גובה לפי הצורך */
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            overflow: hidden;
+            height: 600px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-
         footer {
             text-align: center;
-            padding: 10px 0;
-            background-color: #333;
-            color: white;
-            width: 100%;
-            position: sticky;
-            bottom: 0;
+            padding: 1rem;
+            margin-top: 2rem;
+            background-color: #d9e4f5;
+            font-size: 0.9rem;
+            color: #555;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>הוויזואליזציה שלי</h1>
+        <h1>הויזואליזציה שלי</h1>
     </header>
 
-    <div class="container">
-        <h2>ברוכים הבאים לפרויקט הוויזואליזציה השאפתני שלי ב-Tableau!</h2>
+    <main>
+        <h2>אודות הפרויקט</h2>
         <p>
-            פרויקט זה נועד להציג תובנות מעמיקות מתוך מערך נתונים מורכב באמצעות כלי הוויזואליזציה העוצמתי של Tableau.
-            המטרה המרכזית היא להפוך נתונים גולמיים לסיפור ויזואלי ברור ומשכנע, שיאפשר קבלת החלטות מושכלת יותר.
+            זהו פרויקט שאפתני שנבנה באמצעות פלטפורמת Tableau, במטרה להמחיש מגמות, תובנות עסקיות ודפוסי נתונים בצורה אינטואיטיבית וידידותית למשתמש.
+            הפרויקט עוסק בניתוח נתוני מכירות בין השנים 2020-2024, תוך שימת דגש על תחומים כמו צמיחה אזורית, מוצרי מפתח וביצועים חודשיים.
         </p>
 
-        <h2>סקירה כללית של הפרויקט</h2>
-        <p>
-            בפרויקט זה, התמקדתי בניתוח נתוני מכירות של חברת "אלפא טק" במהלך השנה האחרונה.
-            מערך הנתונים כולל מידע מפורט על עסקאות מכירה, פילוח לפי אזורים גיאוגרפיים, קטגוריות מוצרים,
-            נציגי מכירות ופרקי זמן שונים. באמצעות Tableau, יצרתי מספר דאשבורדים אינטראקטיביים המאפשרים
-            למשתמשים לחקור את הנתונים בצורה דינמית ולגלות מגמות ודפוסים חשובים.
-        </p>
+        <div class="buttons">
+            <a href="#viz">מעבר לויזואליזציה</a>
+            <a href="https://public.tableau.com/app/profile/home" target="_blank">בקר ב-Tableau Public</a>
+        </div>
 
-        <h2>הדאשבורדים המרכזיים</h2>
+        <h2>נקודות מפתח</h2>
         <ul>
-            <li>
-                <strong>דאשבורד סקירת מכירות שנתית:</strong> מציג את סך המכירות, הרווח הגולמי ומספר העסקאות
-                במהלך השנה, עם אפשרות לפילוח לפי חודשים ורבעונים.
-            </li>
-            <li>
-                <strong>דאשבורד פילוח גיאוגרפי:</strong> מציג את ביצועי המכירות לפי אזורים שונים בארץ,
-                מאפשר להשוות בין אזורים ולזהות אזורים עם פוטנציאל צמיחה גבוה או חולשה.
-            </li>
-            <li>
-                <strong>דאשבורד ניתוח מוצרים:</strong> מציג את נתוני המכירות של קטגוריות המוצרים השונות,
-                מאפשר לזהות את המוצרים המובילים ואת אלה שדורשים שיפור במכירות.
-            </li>
-            <li>
-                <strong>דאשבורד ביצועי נציגי מכירות:</strong> מאפשר להשוות בין ביצועי נציגי המכירות השונים,
-                לזהות את המצטיינים ולתת כלים למנהלים לקבל החלטות בנוגע לצוות המכירות.
-            </li>
+            <li>שיעור צמיחה שנתי ממוצע: 12.5%</li>
+            <li>המוצר הנמכר ביותר: SmartWatch X300</li>
+            <li>האזור עם הביצועים הטובים ביותר: מרכז אירופה</li>
+            <li>תחזית לשנת 2025: עלייה צפויה של 15%</li>
         </ul>
 
-        <h2>הטמעת הוויזואליזציה מ-Tableau Public</h2>
-        <div class="tableau-viz">
-            <iframe src="https://public.tableau.com/views/ExtractData1/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
-                    width="100%" height="100%" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+        <div class="tableau-container" id="viz">
+            <h2>הדשבורד שלי</h2>
+            <iframe src="https://public.tableau.com/views/ExtractData1/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"></iframe>
         </div>
-
-        <h2>כלים וטכנולוגיות</h2>
-        <p>
-            הפרויקט מבוסס כולו על פלטפורמת Tableau Public. הנתונים עובדו ונותחו ישירות בתוך Tableau,
-            תוך שימוש בפונקציות מתקדמות ליצירת חישובים מורכבים, יצירת קבוצות ופילטרים, ובניית הוויזואליזציות
-            האינטראקטיביות המוצגות בדאשבורדים.
-        </p>
-
-        <div class="button-container">
-            <a href="https://public.tableau.com/profile/your.profile.name" class="button" target="_blank">עבור לפרופיל ה-Tableau שלי</a>
-            <a href="#" class="button">צור קשר</a>
-            <a href="#" class="button">מידע נוסף על הפרויקט</a>
-        </div>
-    </div>
+    </main>
 
     <footer>
-        &copy; 2025 כל הזכויות שמורות
+        &copy; 2025 הפרויקט של הויזואליזציה שלי
     </footer>
 </body>
 </html>
